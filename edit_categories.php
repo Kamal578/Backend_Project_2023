@@ -34,7 +34,19 @@ while ($var = $mysqliResultCategories->fetch_assoc()) {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
     <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <style>
+        .buttons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 1rem;
+        }
 
+        .buttons > * {
+            margin: 0 1rem;
+            width: 10rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -45,8 +57,13 @@ while ($var = $mysqliResultCategories->fetch_assoc()) {
                 <div class="card-header text-center">
                     <h1>Category List</h1>
                 </div>
+                <div class="buttons">
+                    <button class="btn btn-success" onClick="window.location.href='create_category.php'">Add
+                        Category</button>
+                    <button class="btn btn-danger" onClick="window.location.href='home.php'">Go Back</button>
+                </div>
                 <div class="card-body">
-                    <table class="table table-striped table-bordered" id='mainTable' style="width:100%">
+                    <table id="mainTable" class="table table-striped table-bordered" id='mainTable' style="width:100%">
                         <thead>
                             <tr>
                                 <th scope="col">ID</th>
@@ -76,11 +93,6 @@ while ($var = $mysqliResultCategories->fetch_assoc()) {
                                     </tr>";
                             }
                             ?>
-                            <tr> <button class="btn btn-success"
-                                    onClick="window.location.href='create_category.php'">Add
-                                    Category</button></tr>
-                            <tr> <button class="btn btn-danger"
-                                    onClick="window.location.href='home.php'">Cancel</button></tr>
                         </tbody>
                     </table>
                 </div>
@@ -88,7 +100,19 @@ while ($var = $mysqliResultCategories->fetch_assoc()) {
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script src="src/js/delete.js"></script>
+    <script>
+        new DataTable('#mainTable');
+    </script>
 
 </body>
 

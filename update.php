@@ -78,7 +78,7 @@ $stmt->close();
     echo "<input type='submit' value='Submit' id='submit' class='actionButton submit'>";
     echo "</form>";
 
-    echo "<h1 style='margin-bottom: 1rem;'><a href='/maarif/home.php' class='actionButton cancel'>Cancel</h1>";
+    echo "<h1 style='margin-bottom: 1rem;'><a href='/backendproject2023/home.php' class='actionButton cancel'>Cancel</h1>";
     ?>
 </body>
 
