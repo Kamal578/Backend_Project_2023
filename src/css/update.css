@@ -1,0 +1,48 @@
+body {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+h1#title {
+  background-color: white;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 20px auto;
+  padding: 20px;
+  font-size: 50px;
+  color: #000;
+}
+
+
+.actionButton {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  border: green 2.5px solid;
+  margin: 1rem;
+  transition: 500ms all;
+}
+
+.actionButton:hover {
+  color: green;
+  background-color: white;
+  scale: 1.1;
+}
+
+.actionButton.cancel {
+  background-color: red;
+  border: red 2.5px solid;
+}
+
+.actionButton.cancel:hover {
+  color: red;
+  background-color: white;
+  scale: 1.1;
+}
