@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . '/configLocal.php';
+require __DIR__ . '/configLocal.php'; // refer to configExample.php
 require __DIR__ . '/configProd.php'; // alwaysdata
 
 $host = $config['database']['host'];
