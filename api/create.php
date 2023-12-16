@@ -48,5 +48,5 @@ $transactionList[$new_transactionID] = new Transactions($new_transactionID, $_PO
 $query = "INSERT INTO `transactions`(`transactionID`, `date`, `amount`, `description`, `categoryID`, `paymentID`) VALUES ($new_transactionID, '" . $transactionList[$new_transactionID]->date . "', '" . $transactionList[$new_transactionID]->amount . "', '" . $transactionList[$new_transactionID]->description . "', '" . $transactionList[$new_transactionID]->categoryID . "', '" . $transactionList[$new_transactionID]->paymentID . "')";
 $mysqliResult = $mysqli->query($query);
 
-header("Location: http://localhost/maarif/home.php");
+header("Location: http://localhost/backendproject2023/home.php");
 ?>

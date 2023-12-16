@@ -35,7 +35,7 @@ $stmt->close();
 
 // Optionally, you can update related data in other tables (e.g., answers) if needed.
 
-header("Location: http://localhost/maarif/home.php");
+header("Location: http://localhost/backendproject2023/home.php");
 
 // Function to check if a value exists in a table
 function checkIfExists($value, $table, $column) {
