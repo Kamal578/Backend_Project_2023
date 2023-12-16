@@ -14,3 +14,11 @@ function confirmDeleteCategory(categoryID) {
         return false;
     }
 }
+
+function confirmDeletePaymentMethod(paymentMethodID) {
+    if (confirm("Are you sure you want to delete this payment method?")) {
+        window.location.href = "api/delete_payment.php?paymentID=" + paymentMethodID;
+    } else {
+        return false;
+    }
+}

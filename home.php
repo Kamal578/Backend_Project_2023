@@ -93,7 +93,7 @@ while ($var = $mysqliResult->fetch_assoc()) {
                     <a class="nav-link" href="edit_categories.php">Modify Categories</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Modify Payment Methods</a>
+                    <a class="nav-link" href="edit_payment_methods.php">Modify Payment Methods</a>
                 </li>
             </ul>
         </div>
