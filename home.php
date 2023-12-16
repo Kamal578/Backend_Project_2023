@@ -109,7 +109,7 @@ while ($var = $mysqliResult->fetch_assoc()) {
                                         <td class='category'>" . $categoryList[$valueTransaction->categoryID]->category . "</td>
                                         <td class='paymentMethod'>" . $paymentList[$valueTransaction->paymentID]->paymentMethod . "</td>
                                         <td class='action'>
-                                            <a class='edit btn btn-warning' href='update.php?transactionID=$keyTransactionID'>Edit</a>
+                                            <a class='edit btn btn-primary' href='update.php?transactionID=$keyTransactionID'>Edit</a>
                                             <button style='width:100%;height:100%;' class='delete btn btn-danger' onClick='confirmDeleteTransaction($keyTransactionID)'>Delete</a>
                                         </td>
                                     </tr>";
