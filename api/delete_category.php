@@ -11,6 +11,13 @@ if (isset($_GET['categoryID']) && is_numeric($_GET['categoryID'])) {
     exit();
 }
 
+// Delete related transactions first
+$queryDeleteTransactions = "DELETE FROM transactions WHERE categoryID = ?";
+$stmtDeleteTransactions = $mysqli->prepare($queryDeleteTransactions);
+$stmtDeleteTransactions->bind_param("i", $categoryID);
+$stmtDeleteTransactions->execute();
+$stmtDeleteTransactions->close();
+
 // Perform the deletion operation
 $query = "DELETE FROM categories WHERE categoryID = ?";
 $stmt = $mysqli->prepare($query);
