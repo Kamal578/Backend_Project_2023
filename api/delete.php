@@ -25,5 +25,5 @@ $stmt->close();
 
 // Optionally, you can delete related data in other tables (e.g., answers) if needed.
 
-header("Location: http://localhost/backendproject2023/home.php");
+header("Location: http://localhost/backendproject2023/index.php");
 ?>

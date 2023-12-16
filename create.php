@@ -71,7 +71,7 @@ while ($var = $mysqliResultPayments->fetch_assoc()) {
          <br>
          <div id="buttonsContainer">
             <input type="submit" value="Submit" id="submit" class='button' onclick="checkIfEmpty()"> <br>
-            <a id="cancel" href="home.php" class='button'>Cancel</a>
+            <a id="cancel" href="index.php" class='button'>Cancel</a>
          </div>
       </fieldset>
    </form>

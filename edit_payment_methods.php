@@ -63,7 +63,7 @@ while ($var = $mysqliResultPayments->fetch_assoc()) {
                 <div class="buttons">
                     <button class="btn btn-success" onClick="window.location.href='create_payment.php'">Add
                         Payment Method</button>
-                    <button class="btn btn-danger" onClick="window.location.href='home.php'">Go Back</button>
+                    <button class="btn btn-danger" onClick="window.location.href='index.php'">Go Back</button>
                 </div>
                 <div class="card-body">
                     <table class="table table-striped table-bordered" id='mainTable' style="width:100%">
