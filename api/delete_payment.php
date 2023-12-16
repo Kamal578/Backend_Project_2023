@@ -33,16 +33,6 @@ $stmtDeletePayment->close();
 
 header("Location: http://localhost/backendproject2023/edit_payment_methods.php");
 
-
-// Delete the payment
-$query = "DELETE FROM payments WHERE paymentID = ?";
-$stmt = $mysqli->prepare($query);
-$stmt->bind_param("i", $paymentID);
-$stmt->execute();
-$stmt->close();
-
-header("Location: http://localhost/backendproject2023/edit_payment_methods.php");
-
 // Function to check if a value exists in a table
 function checkIfExists($value, $table, $column)
 {
