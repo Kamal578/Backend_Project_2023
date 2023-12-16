@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <div class="col-md-6 mt-lg-3">
             <div class="card">
                 <div class="card-header text-center">
-                    <h1>Create New Payment</h1>
+                    <h1>Create New Payment Method</h1>
                 </div>
                 <div class="card-body">
                     <form action="api/create_payment.php" method="post">
@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                             <input type="text" class="form-control" id="paymentMethod" name="paymentMethod" required>
                         </div>
                         <!-- Add additional form fields as needed -->
-                        <button type="submit" class="btn btn-primary">Create Payment</button>
+                        <button type="submit" class="btn btn-primary">Create</button>
                     </form>
                     <!-- Cancel button -->
                     <a href="payments.php" class="btn btn-danger">Cancel</a>

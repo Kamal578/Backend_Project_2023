@@ -47,7 +47,7 @@ while ($var = $mysqliResultPayments->fetch_assoc()) {
 
         .buttons>* {
             margin: 0 1rem;
-            width: 10rem;
+            width: 14rem;
         }
     </style>
 </head>
@@ -62,7 +62,7 @@ while ($var = $mysqliResultPayments->fetch_assoc()) {
                 </div>
                 <div class="buttons">
                     <button class="btn btn-success" onClick="window.location.href='create_payment.php'">Add
-                        Category</button>
+                        Payment Method</button>
                     <button class="btn btn-danger" onClick="window.location.href='home.php'">Go Back</button>
                 </div>
                 <div class="card-body">

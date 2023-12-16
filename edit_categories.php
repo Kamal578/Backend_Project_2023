@@ -47,7 +47,7 @@ while ($var = $mysqliResultCategories->fetch_assoc()) {
 
         .buttons > * {
             margin: 0 1rem;
-            width: 10rem;
+            width: 14rem;
         }
     </style>
 </head>
