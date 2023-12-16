@@ -1,0 +1,105 @@
+/*createQuestion.php*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+
+body {
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.label {
+  font-size: 22px;
+}
+
+#cancel {
+  border: 2px solid red;
+  background-color: red;
+  transition: 0.3s all;
+}
+
+#submit {
+  border: 2px solid green;
+  background-color: green;
+  transition: 0.3s all;
+}
+
+#cancel:hover {
+  scale: 1.1;
+  background-color: white;
+  color: red;
+}
+
+#submit:hover {
+  scale: 1.1;
+  background-color: white;
+  color: green;
+}
+
+.button {
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px;
+  padding: 14px;
+  cursor: pointer;
+  width: 20vw;
+}
+
+#nonselectables {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.nonselectable {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+fieldset {
+  margin-top: -1rem;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 1rem;
+}
+
+/*give all the children of fieldset padding*/
+fieldset > * {
+  padding: 1.2rem;
+}
+
+fieldset > legend {
+  font-size: 1rem;
+}
+
+form select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form > select > option {
+  font-size: 1.5rem;
+}
