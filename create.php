@@ -31,7 +31,7 @@ while ($var = $mysqliResultPayments->fetch_assoc()) {
 <link rel="stylesheet" href="src/css/main.css">
 
 <body>
-   <form action='/maarif/api/create.php' method="post">
+   <form action='/backendproject2023/api/create.php' method="post">
       <fieldset>
          <legend>
             <h1>Creating new transaction</h1>
