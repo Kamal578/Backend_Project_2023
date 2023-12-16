@@ -45,7 +45,7 @@ $stmt->close();
     <link rel="stylesheet" href="src/css/main.css">
     <title>Update</title>
 </head>
-
+<script src="src/js/dateRestrictor.js"></script>
 <body>
 
     <?php

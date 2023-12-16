@@ -75,7 +75,7 @@ while ($var = $mysqliResultPayments->fetch_assoc()) {
          </div>
       </fieldset>
    </form>
-   <!-- <script src="src/js/create.js"></script> -->
+   <script src="src/js/dateRestrictor.js"></script>
 </body>
 
 </html>

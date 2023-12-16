@@ -48,7 +48,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
     <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-
+    <style>
+        body{
+            overflow: hidden;
+        }
+    </style>
 </head>
 
 <body>
@@ -83,8 +87,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             </div>
         </div>
     </div>
-
-    <!-- Add any additional scripts you need -->
 
 </body>
 

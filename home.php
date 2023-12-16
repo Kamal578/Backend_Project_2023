@@ -90,10 +90,10 @@ while ($var = $mysqliResult->fetch_assoc()) {
                     <a class="nav-link" href="/backendproject2023/home.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="edit_categories.php">Modify Categories</a>
+                    <a class="nav-link" href="edit_categories.php">Edit Categories</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="edit_payment_methods.php">Modify Payment Methods</a>
+                    <a class="nav-link" href="edit_payment_methods.php">Edit Payment Methods</a>
                 </li>
             </ul>
         </div>
@@ -125,7 +125,7 @@ while ($var = $mysqliResult->fetch_assoc()) {
                             <?php
                             foreach ($transactionList as $keyTransactionID => $valueTransaction) {
                                 echo "<tr>
-                                        <th score='row' class='id'><strong> $keyTransactionID</strong></td>
+                                        <td score='row' class='id'><strong> $keyTransactionID</strong></td>
                                         <td class='date'>$valueTransaction->date </td>
                                         <td class='amount'>$valueTransaction->amount</td>
                                         <td class='description'>$valueTransaction->description</td>
